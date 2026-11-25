@@ -1,0 +1,27 @@
+# Local financial data and imports
+data/*
+!data/samples/
+!data/samples/**
+input/
+
+# Secrets and environment files
+.env
+.env.*
+!.env.example
+*.keys
+*.key
+*.pem
+
+# Python and tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+site/
+
+# Editor and OS
+.vscode/
+.DS_Store
+Thumbs.db
