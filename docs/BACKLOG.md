@@ -11,9 +11,9 @@ Task execution rules are in `TASK_EXECUTION_CONTRACT.md`. This file is the machi
 
 | Run | Phase | Task | Depends on | Status |
 | --- | --- | --- | --- | --- |
-| 1 | P0 | Repo hygiene: ignore real data and keys; keyring or `.env`; pin requirements; ruff/pre-commit; synthetic CSVs | - | In review |
-| 2 | P0 | Replace `test_functions.py` with pytest tests for loan, metals, and Vanguard utilities | 1 | In review |
-| 3 | P0 | Fix Bank Accounts: ending balance, month/year sorting, and CD APY compounding | 2 | Not started |
+| 1 | P0 | Repo hygiene: ignore real data and keys; keyring or `.env`; pin requirements; ruff/pre-commit; synthetic CSVs | - | Done |
+| 2 | P0 | Replace `test_functions.py` with pytest tests for loan, metals, and Vanguard utilities | 1 | Done |
+| 3 | P0 | Fix Bank Accounts: ending balance, month/year sorting, and CD APY compounding | 2 | In review |
 | 4 | P0 | Fix metals no-price behavior, cache/API time labels, and Vanguard date sorting | 2 | Not started |
 | 5 | P0 | Merge duplicate portfolio utilities into a broker-neutral module | 2 | Not started |
 | 6 | - | BUFFER: lint, tests, TODOs | - | Not started |
