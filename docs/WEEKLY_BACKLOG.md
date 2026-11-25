@@ -16,7 +16,7 @@ One row is one weekly run: 53 tasks plus 10 buffer runs, about 63 weeks (roughly
 | Run | Phase | Task | Depends on | Done when | Status |
 | --- | --- | --- | --- | --- | --- |
 | 1 | P0 | Repo hygiene: `.gitignore` for `data/`, `input/`, keys; keys to keyring or `.env`; pin `requirements.txt` (add `networkx`, `requests`); `ruff` + `pre-commit`; synthetic CSVs in `data/samples/` | - | `git check-ignore` covers keys and data; fresh install runs every page on samples | In review |
-| 2 | P0 | Replace `test_functions.py` with `pytest` tests for `utils/` (loan, metals, Vanguard calc) on fixed sample CSVs | 1 | `pytest` passes with known expected outputs | Not started |
+| 2 | P0 | Replace `test_functions.py` with `pytest` tests for `utils/` (loan, metals, Vanguard calc) on fixed sample CSVs | 1 | `pytest` passes with known expected outputs | In review |
 | 3 | P0 | Fix Bank Accounts: `Ending Balance` column, month+year sorting, APY compounding for CDs | 2 | Page loads; tests cover each fix | Not started |
 | 4 | P0 | Fix metals (no-price valuation, cached API call, time labels) and Vanguard glob/filename-date sort bugs | 2 | Tests reproduce each bug and pass after the fix | Not started |
 | 5 | P0 | Merge `utils/portfolio.py` into one broker-neutral portfolio module | 2 | No duplicated code; existing tests pass | Not started |
