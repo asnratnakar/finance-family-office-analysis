@@ -21,11 +21,9 @@ Never commit:
 
 ## Data folders
 
-- `data/`: local real-data directory; all contents ignored except explicit synthetic-sample exceptions
+- `data/`: local real-data directory; no personal CSV or statement should be committed
 - `input/`: local real imports; ignored
-- `data/samples/`: synthetic-only commit-safe fixtures
-- `docs/screenshots/baseline/`: synthetic UI evidence only
-- `docs/screenshots/migrated/`: synthetic UI evidence only
+- `tests/fixtures/`: optional synthetic, non-personal fixture files with no real identifiers or balances
 
 ## Secret storage
 

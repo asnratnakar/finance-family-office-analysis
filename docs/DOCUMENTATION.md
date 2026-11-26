@@ -227,7 +227,7 @@ private-fin-analysis/
 │
 ├── 📊 Data
 │   ├── data/                          Local financial data directory
-│   └── data/samples/                 Synthetic sample data only
+│   └── tests/fixtures/               Optional synthetic test fixtures
 │
 ├── ⚙️ Config & tests
 │   ├── .pre-commit-config.yaml

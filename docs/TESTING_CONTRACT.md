@@ -14,7 +14,7 @@
 Tests must:
 
 - use fixed synthetic fixtures
-- not read `data/` outside `data/samples/`
+- not read or write real content under `data/` or `input/`
 - not write real input folders
 - not make live API calls
 - not require account credentials
@@ -81,7 +81,7 @@ For every importer:
 
 - real-data patterns are ignored
 - `.env` and key files are ignored
-- sample files are allowed
+- synthetic in-memory fixtures are required
 - secret values are never printed/logged
 - API key is not included in request payload except authorization headers
 

@@ -86,7 +86,7 @@ For UI implementation, validation must include:
 If the task touches data/import/storage:
 
 1. Identify every source schema.
-2. Create synthetic fixtures under `data/samples/`.
+2. Create fixed synthetic in-memory fixtures in tests.
 3. Define expected native-currency values.
 4. Define FX behavior and source/as-of fields.
 5. Define duplicate behavior.
@@ -94,7 +94,7 @@ If the task touches data/import/storage:
 7. Define stale/missing-data behavior.
 8. Define import failure behavior.
 
-Never read or write `data/` outside `data/samples/` during tests.
+Never read or write real content under `data/` or `input/` during tests.
 
 ## Test-first implementation
 

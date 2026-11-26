@@ -17,13 +17,13 @@ pre-commit install
 streamlit run PersonalPortfolioAnalysis.py
 ```
 
-Only synthetic fixtures under `data/samples/` are commit-safe. Real data belongs in ignored `data/` and `input/` locations and must not be committed.
-
 ## Verify
 
 ```powershell
 ruff check .
 pytest
 streamlit run PersonalPortfolioAnalysis.py --server.headless true
-git check-ignore -v data/api_keys.keys data/banking/checkingAccounts.csv input/example.csv data/samples/checkingAccounts.csv
+git check-ignore -v data/api_keys.keys data/banking/checkingAccounts.csv input/example.csv
 ```
+
+All financial files come from the appropriate subfolders under `data/`. Real data, API keys, and imports must remain local and untracked. Tests use fixed in-memory fixtures and must not read real data folders.

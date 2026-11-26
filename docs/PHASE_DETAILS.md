@@ -8,7 +8,7 @@ Each phase lists its goal, features, and a done-when test; backlog run numbers a
 
 Goal: a codebase that is safe to commit and trustworthy enough to build on.
 
-- `.gitignore` covers `data/api_keys.keys`, `data/**/*.csv`, and `input/`; shareable synthetic files live in `data/samples/`
+- `.gitignore` covers `data/api_keys.keys`, `data/**/*.csv`, and `input/`; tests use fixed synthetic in-memory fixtures
 - API keys in the OS keyring (`keyring`) or `.env`
 - Every bug in the repo's known-bugs table fixed, each with a test
 - `utils/portfolio.py` and `utils/portfolio_calc_van.py` merged into one broker-neutral module
@@ -138,7 +138,7 @@ Goal: decide property by property how to turn inherited real estate into low-mai
 
 - 10-20 year cash flow per option: rent growth, vacancy, costs, repairs, fees, sale proceeds, tax in both countries; outputs after-tax IRR, net yield, maintenance hours, months to cash, concentration and currency effects
 - Two gains per sale: US gain from date-of-death value (usually small), Indian gain from the parents' cost (often large); foreign tax credit offsets only US tax on the same income
-- Indian rate options (12.5% without indexation, or 20% with indexation for qualifying pre-23 Jul 2024 property); reliefs s.54, s.54EC (Rs 50 lakh cap, 5-year lock-in), s.54F, Indian tax only
+- Indian rate options (12.5% without indexation, or 20% with indexation for qualifying pre-23 Jul 2004 property); reliefs s.54, s.54EC (Rs 50 lakh cap, 5-year lock-in), s.54F, Indian tax only
 - NRI seller TDS and s.197 lower-deduction certificate; phasing across Indian FYs and US tax years under the USD 1M cap
 - Agricultural land near Gudivada: rural land is not a capital asset; urban bands 2/6/8 km by municipal population (Gudivada likely 6 km; measure); NRI can sell only to resident Indian citizens; agricultural income exempt in India but taxable in the US while US-resident; lease vs sell
 - Vizag apartments: tenant TDS under s.195 (about 31%) unless a lower certificate; net yield vs REITs, FDs, bonds after tax and effort; Schedule E with 30-year depreciation while US-resident

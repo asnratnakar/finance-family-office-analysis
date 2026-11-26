@@ -3,7 +3,7 @@
 **Status:** migration reference, not a guarantee of every current file
 **Updated:** 25 November 2026
 
-> **Authority:** `DATA_CONTRACT.md` governs new imports and ledger storage. The legacy structure below documents paths used by the current app and must not be copied into the new repo as an arbitrary design. Real data belongs outside version control. Only synthetic fixtures under `data/samples/` are commit-safe.
+> **Authority:** `DATA_CONTRACT.md` governs new imports and ledger storage. The legacy structure below documents paths used by the current app and must not be copied into the new repo as an arbitrary design. Real data belongs outside version control and in local `data/<category>/` folders.
 
 ## Overview
 The data folder has been reorganized into logical subfolders by asset class for better organization and scalability.

@@ -88,7 +88,7 @@ The repository is a Streamlit multi-page dashboard with legacy CSV inputs. It is
 
 ## Data files
 
-Real portfolio, banking, metals, and API-key data may exist under `data/`. The new repository must not copy these files. Synthetic examples may be created under `data/samples/`.
+Real portfolio, banking, metals, and API-key data may exist under `data/`. The new repository must not copy these files.
 
 ## UI baseline status
 

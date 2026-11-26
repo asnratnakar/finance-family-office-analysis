@@ -10,7 +10,7 @@ Constraints:
 - Python + Streamlit
 - No real financial data in repo
 - Keep root clean (entry point + config only)
-- Create folders: docs, scripts, tests, pages, utils, data/samples, input
+- Create folders: docs, scripts, tests, pages, utils, data
 - Add .gitignore to block real data and keys
 - Add .env.example
 - Add requirements.txt with: streamlit, pandas, plotly, numpy, requests, networkx, pytest, ruff, pre-commit, python-dotenv, keyring

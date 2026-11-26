@@ -1,7 +1,5 @@
 # Local financial data and imports
 data/*
-!data/samples/
-!data/samples/**
 input/
 
 # Secrets and environment files

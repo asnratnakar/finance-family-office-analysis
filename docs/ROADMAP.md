@@ -173,7 +173,7 @@ A Claude Code cloud scheduled task runs once a week, builds the next backlog tas
 
 ### Guardrails in `CLAUDE.md`
 
-- Never read or write `data/` or `input/` except `data/samples/`; never commit a CSV outside `samples/`.
+- Never read or write real financial content under `data/` or `input/` in tests; never commit statements or exports.
 - No live network calls in tests; mock every price, FX, and metals API.
 - One backlog task per run; never start the next one, never merge.
 - Tax rates and thresholds go only into dated config files, each with a source link and an "as of" date.
@@ -187,7 +187,7 @@ You are working on the cross-border portfolio app in this repository.
 1. Read CLAUDE.md, docs/BACKLOG.md and docs/PHASES.md.
 2. Pick the first task with Status "Not started" whose "Depends on" tasks are Done.
    If that row is a BUFFER week, fix failing tests, lint errors and TODOs instead.
-3. Implement only that task on a new branch. Use synthetic data in data/samples/ only.
+3. Implement only that task on a new branch. Use fixed synthetic in-memory data for tests.
 4. Add or update pytest tests that prove the task's "Done when" line.
    Run ruff and pytest until both pass, at most 3 fix attempts.
 5. In docs/BACKLOG.md set the task to "In review", or "Blocked" with the reason.

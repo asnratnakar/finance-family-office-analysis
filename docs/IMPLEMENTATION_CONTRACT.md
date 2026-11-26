@@ -176,7 +176,7 @@ The repository must not contain:
 - real balances or transaction histories
 - personal property address records
 
-`data/` and `input/` are local-only except explicit synthetic files under `data/samples/`.
+`data/` and `input/` are local-only. Tests must use fixed in-memory or test-fixture data and must never read real `data/` or `input/` content.
 
 Encryption at rest is required before real financial data is imported. Development with real data must remain opt-in and local-only.
 
@@ -198,7 +198,7 @@ Required test categories:
 - regression tests for known bugs
 - no-network tests
 
-Live APIs must be mocked. No test may read or write `data/` outside `data/samples/`.
+Live APIs must be mocked. Tests must not read or write real content under `data/` or `input/`.
 
 ## 10. Definition of done
 

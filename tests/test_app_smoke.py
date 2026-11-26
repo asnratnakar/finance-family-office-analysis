@@ -24,3 +24,7 @@ def test_local_data_category_folders_exist():
 
 def test_local_data_loader_module_exists():
     assert (ROOT / "utils" / "local_data.py").is_file()
+
+
+def test_sample_data_directory_does_not_exist():
+    assert not (ROOT / "data" / "sample").is_dir()

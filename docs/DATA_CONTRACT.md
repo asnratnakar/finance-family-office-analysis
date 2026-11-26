@@ -19,10 +19,10 @@ input/
 Synthetic repository fixtures:
 
 ```text
-data/samples/
+tests/fixtures/
 ```
 
-Real personal data must never exist in `data/samples/`.
+Real personal data must never exist in repository test fixtures.
 
 ## 2. Input file naming
 
